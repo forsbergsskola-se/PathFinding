@@ -14,6 +14,7 @@ public class GridCell : MonoBehaviour
 
     private void OnValidate()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = walkable ? Color.white : Color.black;
     }
 }
